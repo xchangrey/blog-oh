@@ -49,7 +49,12 @@ export default withAuth(class Home extends Component {
 
     return (
       <div className="jumbotron">
-       <h1 className="display-4">Welcome to BlogOH!</h1>
+       <h1 className="display-4">Welcome to 
+        <img 
+          src="blogoh.jpg" 
+          style={{width:200, maxWidth: '100%', marginLeft: '1rem'}}
+        />
+       </h1>
        {mainContent}
       </div>
     );
