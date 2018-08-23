@@ -42,15 +42,14 @@ class Post extends Component {
         <p>You have reached the point of no return!</p>
         <div>
           {posts.map(({id, title, body}) => {
-            return 
-                  (
-                    <div className="card" key={id}>
-                      <div className="card-body">
-                        <h2>{title}</h2>
-                        <p>{body}</p>
-                      </div>
-                    </div>
-                  );
+            return(
+              <div className="card" key={id}>
+                <div className="card-body">
+                  <h2>{title}</h2>
+                  <p>{body}</p>
+                </div>
+              </div>
+            );
           })}
         </div>
       </div>
